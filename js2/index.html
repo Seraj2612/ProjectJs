@@ -13,36 +13,44 @@
         <nav class="main-nav">
             <ul class="nav-links"></ul>
             <input type="search" placeholder="Search articles..." />
-        </nav>        
+        </nav>
     </header>
+
     <main>
-    <div class="container">
-        <h1>Phone Book</h1>
-        <div class="phonebook">
-            <div class="top-bar">
-                <span>4 people</span>
-                <input type="text" placeholder="Search..." />
-                <button class="add-btn">
-                <img src="./images/user-add.png" alt="Add" />
-                </button>
-                <button class="delete-btn">
-                <img src="./images/trash.png" alt="Delete All" />
-                </button>                  
+        <div class="container">
+            <h1>Phone Book</h1>
+            <div class="phonebook">
+                <div class="top-bar">
+                    <span class="contact-count">4 people</span>
+                    <input type="text" class="contact-search" placeholder="Search..." />
+                    <button class="add-btn">
+                        <img src="./images/user-add.png" alt="Add" />
+                    </button>
+                    <button class="delete-btn">
+                        <img src="./images/trash.png" alt="Delete All" />
+                    </button>
+                </div>
+
+                <ul class="contact-list"></ul>
+
+                <div class="popup-overlay">
+                    <div class="popup">
+                        <h3>Contact Details</h3>
+                        <p class="popup-name"></p>
+                        <p class="popup-phone"></p>
+                        <p class="popup-email"></p>
+                        <p class="popup-address"></p>
+                        <button class="popup-close-btn">Close</button>
+                    </div>
+                </div>
             </div>
-            <ul class="contact-list"></ul>
-            <div class="popup-overlay">
-                <div class="popup">
-                    <h3>Contact Details</h3>
-                    <p>Name: John Smith</p>
-                    <p>Phone: 050-1234567</p>
-                    <p>Email:JohnSmith@gmail.com</p>
-                    <p>Address:Tel Aviv</p>
-                    <button>Close</button>
-                </div> 
+        </div>
     </main>
+
     <footer>
         <p>&copy; 2025 All rights reserved - Phone Book Project</p>
     </footer>
+
     <script src="js.js"></script>
 </body>
 
